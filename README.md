@@ -77,7 +77,8 @@ cmake -GNinja {root} -DBUILD_APKS=ON -DANDROID_SDK=path/to/android/sdk -DANDROID
 
 `glslc` is required to compile GLSL shaders to SPIR-V. If it is not
 on your path, its location should be specified through `-DCMAKE_GLSL_COMPILER`
-option.
+option. Recent versions of the Android NDK embed `glslc`,
+see `path/to/ndk/shader-tools/<HOST_PLATFORM>/glslc`.
 
 # Compilation Options
 The only specific other compilation options control default behavior for all
